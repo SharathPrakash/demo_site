@@ -1,0 +1,32 @@
+html{
+    --primary_black:#333333;
+    --primary_blue:#FF00FF;
+    --primary_white:white;
+}
+
+#navigation{
+    background-color:var(--primary_black);
+}
+
+#navigation ul li{
+    border:3px solid var(--primary_blue);
+    margin: 10px;
+}
+#navigation ul li a:hover{
+    background-color: var(--primary_blue);
+    
+}
+#navigation ul li a{
+    color:var(--primary_white);
+}
+
+.user_card{
+    background-color: var(--primary_black);
+    color:var(--primary_white);
+}
+
+.user_card a{
+    color: white;
+    border:3px solid var(--primary_blue);
+
+}
