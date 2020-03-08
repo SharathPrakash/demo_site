@@ -1,22 +1,26 @@
 html{
     --primary_black:#333333;
-    --primary_blue:#FF00FF;
+    --primary_blue: linear-gradient(225deg,#1400c8 0%,#b900b4 100%);
     --primary_white:white;
 }
-
+#body{
+    background-color:var(--primary_black);
+}
 #navigation{
     background-color:var(--primary_black);
 }
 
 #navigation ul li{
-    border:3px solid var(--primary_blue);
+    background: var(--primary_blue);
     margin: 10px;
+    border-radius: 5px;
 }
 #navigation ul li a:hover{
     background-color: var(--primary_blue);
     
 }
 #navigation ul li a{
+    font-weight: bold;
     color:var(--primary_white);
 }
 
@@ -24,19 +28,23 @@ html{
     background-color: var(--primary_black);
     color:var(--primary_white);
 }
-
-.user_card a{
-    color: white;
-    border:3px solid var(--primary_blue);
-
+.user_card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    border-radius: 50%;
 }
 
 
+.user_card a{
+    font-weight: bold;
+    width:100%;
+    color:var(--primary_white);
+    background: var(--primary_blue);  
+}
 
-
-
-
-
-
-
-
+.user_card a:hover{
+    font-weight: bold;
+    color:var(--primary_white);
+}
